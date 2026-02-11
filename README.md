@@ -4,7 +4,7 @@ Basic 3D implementation in JS and Canvas
 
 ![Screenshot](./img/screenshot.png)
 
-## How
+## Running it
 
 ```
 $ open index.html
@@ -18,6 +18,8 @@ of points clicked with me.
 
 So I thought I was ready to try and write something to help sink in the ideas.
 
+## What
+
 It's entirely hand-written-home-grown-organic-standalone javascript code, which fills me with unhealthy pride. 
 (It does use a little bit of JQuery, though...)
 
@@ -26,6 +28,8 @@ I wrote:
 - Camera logic
 - Render logic
 - Models
+
+## How
 
 ...but what I like best is...
 
