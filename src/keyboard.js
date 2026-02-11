@@ -6,7 +6,7 @@ function KeyboardController(keys, repeat, done){
 	//
 	var timers = {};
 
-	// When key is pressed and we don't already think it's pressed, call the
+	// When key is pressed, and we don't already think it's pressed, call the
 	// key action callback and set a timer to generate another one after a delay
 	//
 	document.onkeydown= function(event) {

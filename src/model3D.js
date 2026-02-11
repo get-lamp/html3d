@@ -1,8 +1,8 @@
 function cube(){
 
-	vl = new Array();
+	vl = [];
 
-	var cube_vertices = new Array(
+	var cube_vertices = [
 		new MapVertex(-1.0, -1.0,   1.0),
 		new MapVertex(1.0,  -1.0,   1.0),
 		new MapVertex(1.0,  1.0,    1.0),
@@ -11,16 +11,16 @@ function cube(){
 		new MapVertex(1.0,  -1.0,   -1.0),
 		new MapVertex(1.0,  1.0,    -1.0),
 		new MapVertex(-1.0, 1.0,    -1.0)
-	);
+	];
 
-	var cube_rectangles = new Array(    
+	var cube_rectangles = [
 		[0, 1, 2, 3],   // top
 		[4, 5, 6, 7],   // bottom
 		[0, 4, 5, 1],   // rear
 		[3, 7, 6, 2],   // front
 		[2, 6, 5, 1],   // left
-		[3, 7, 4, 0]    // right
-	);
+		[3, 7, 4, 0]
+	];
 	
 	vList = new VertexListT(cube_vertices, cube_rectangles, MOD_QUAD_STRIP);
 		
@@ -144,16 +144,16 @@ function azimuthalSphere(){
 ----------------------------------------------------------------------*/	
 function octahedron(){
 
-	var vertices = new Array( 
-		new Vertex( 1.0, 0.0, 0.0),  
-		new Vertex(-1.0, 0.0, 0.0),  
-		new Vertex( 0.0, 1.0, 0.0),  
-		new Vertex( 0.0,-1.0, 0.0),  
-		new Vertex( 0.0, 0.0, 1.0),  
-		new Vertex( 0.0, 0.0,-1.0) 
-	);
+	var vertices = [
+		new Vertex( 1.0, 0.0, 0.0),
+		new Vertex(-1.0, 0.0, 0.0),
+		new Vertex( 0.0, 1.0, 0.0),
+		new Vertex( 0.0,-1.0, 0.0),
+		new Vertex( 0.0, 0.0, 1.0),
+		new Vertex( 0.0, 0.0,-1.0)
+	];
 	
-	var triangles = new Array(
+	var triangles = [
 		[ 0, 4, 2 ],
 		[ 2, 4, 1 ],
 		[ 1, 4, 3 ],
@@ -162,11 +162,9 @@ function octahedron(){
 		[ 2, 1, 5 ],
 		[ 1, 3, 5 ],
 		[ 3, 0, 5 ]
-	)
+	]
 	
 	var vList = modelToVertexList(vertices, triangles);
-	
-	
 	
 	for(i = 0; i < 4; i++){
 		vList = fractalTriangles(vList);
