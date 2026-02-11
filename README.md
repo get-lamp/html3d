@@ -95,6 +95,4 @@ Check it out :)
 
 ## APOLOGY
 
-I'm writing this in 2026. 
-
-If people is allowed to brag about NOT writing code, I can certainly indulge myself and flex about writing it.
+It's 2026. If people can brag about NOT writing code, I can flex about the code I write.
